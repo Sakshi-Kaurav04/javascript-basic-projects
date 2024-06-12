@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div id="wrapper">
+        <!-- <input type="text" placeholder="Search your name"> -->
+        <button id="w-btn"> Search</button>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ratione illum voluptatem alias reiciendis reprehenderit dicta culpa, quidem obcaecati delectus tenetur recusandae quos pariatur aspernatur repellat ducimus nesciunt inventore a, animi rem ipsum qui at! Sint dignissimos, reiciendis quia vel dolorem delectus provident incidunt? Quidem architecto ab sapiente accusamus iusto?</p>
+    </div>
+    <div>
+        <button id="bg-btn">Dark Mode</button>
+    </div>
+</body>
+<script>
+    let bgBtn = document.getElementById("bg-btn");
+    let wrapper = document.getElementById("wrapper");
+  
+    // DSA logic
+   let count =1;
+    bgBtn.onclick = ()=>{
+        if(count&1){
+            document.body.style.backgroundColor ="#0a0a37";
+            bgBtn.innerText = "Light Mode";
+            document.body.style.color ="#fff";
+            // wrapper.classList.add("shi");
+            // wrapper.setAttribute("id", "para-1");
+
+
+
+        }else{
+            document.body.style.backgroundColor ="#fff";
+            bgBtn.innerText = "Dark Mode";
+            document.body.style.color ="black";
+            // wrapper.classList.remove("shi");
+
+        }
+
+        // toggle button
+        wrapper.classList.toggle("shi");
+        count++;
+    }
+
+    wrapper.onmouseenter = ()=>{
+        alert("Do you want to purchase my course");
+    }
+
+</script>
+</html>

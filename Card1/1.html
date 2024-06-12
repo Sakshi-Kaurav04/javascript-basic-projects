@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> -->
+        <!-- <div class="name"></div> -->
+        <img src="https://media.istockphoto.com/id/1148760015/photo/close-up-portrait-of-woman-with-evening-makeup-woman-close-her-eyes-and-show-fahion-slyle.jpg?s=612x612&w=is&k=20&c=97JT3NTKREatS3VpJwcOU4dpzT1Lv51uZxWZ997dGGA=" alt="">
+        <h1>LLAURA THORN</h1>
+        <h2>Web Developer</h2>
+        <button id="bg-btn">Dark Mode</button>
+    </div>
+
+
+<script>
+    let bgBtn = document.getElementById("bg-btn");
+        let wrapper = document.getElementById("wrapper");
+      
+        // DSA logic
+       let count =1;
+        bgBtn.onclick = ()=>{
+            if(count&1){
+                document.body.style.backgroundColor ="#0a0a37";
+                bgBtn.innerText = "Light Mode";
+                document.body.style.color ="#fff";
+                // wrapper.classList.add("shi");
+                // wrapper.setAttribute("id", "para-1");
+    
+    
+    
+            }else{
+                document.body.style.backgroundColor ="#fff";
+                bgBtn.innerText = "Dark Mode";
+                document.body.style.color ="black";
+                // wrapper.classList.remove("shi");
+    
+            }
+        }
+    
+</script>
+    
+</body>
+</html>
